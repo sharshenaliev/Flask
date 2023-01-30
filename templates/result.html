@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %} Cron {% endblock title %}
+
+{% block content %}
+    <div class="container mx-auto md:container md:mx-auto sm:container sm:mx-auto">
+        <pre class="text-lg" style="white-space: pre-wrap">minute         {{ message[0] }}</pre>
+        <pre class="text-lg" style="white-space: pre-wrap">hour           {{ message[1] }}</pre>
+        <pre class="text-lg" style="white-space: pre-wrap">day of month   {{ message[2] }}</pre>
+        <pre class="text-lg" style="white-space: pre-wrap">month          {{ message[3] }}</pre>
+        <pre class="text-lg" style="white-space: pre-wrap">day of week    {{ message[4] }}</pre>
+    </div>
+{% endblock content %}

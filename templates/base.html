@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>{% block title %} Flask {% endblock title %}</title>
+</head>
+<body class="text-gray-700">
+    <div class="container mx-auto px-4">
+        <header class="flex justify-between text-2xl py-8 border-b-2 border-blue-100 mb-8">
+            <a href="https://tailwindcss.com/">Tailwind CSS</a>
+            <ul class="flex justify-between">
+                <li>Contacts:</li>
+                <li class="ml-8"><a href="https://github.com/sharshenaliev">Github</a></li>
+                <li class="ml-8"><a href="https://t.me/Alsh_19">Telegram</a></li>
+            </ul>
+        </header>
+<body>
+  <div>{% block content%}
+    {% endblock content %}</div>
+</body>
+</html>
